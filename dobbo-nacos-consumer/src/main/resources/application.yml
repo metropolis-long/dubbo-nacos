@@ -1,0 +1,13 @@
+dubbo:
+  application:
+    logger: slf4j
+    name: DubboNacosConsumerApplication
+    qos-port: 33333
+  registry:
+    address: nacos://${nacos.address:127.0.0.1}:8848
+    parameters.register-consumer-url: false
+  protocol:
+    name: tri
+    port: 50052
+server:
+  port: 8085
