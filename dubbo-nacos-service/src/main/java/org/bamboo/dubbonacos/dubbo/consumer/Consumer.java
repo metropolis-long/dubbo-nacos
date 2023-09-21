@@ -7,7 +7,7 @@ import org.apache.dubbo.config.annotation.DubboReference;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
-//@Component
+@Component
 public class Consumer implements CommandLineRunner {
     @DubboReference(version = "2.0")
     private DemoService demoService;
